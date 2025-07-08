@@ -1,33 +1,36 @@
 
 
 
-# 🔄 Complex Imbalanced Superposition — Bloch Sphere Representation
 
-Visualizes a qubit in the state:
+# ↔️ Negative Relative Phase — Bloch Sphere Representation
+
+This project visualizes a qubit in the state:
 
 \[
-|\psi\rangle = \frac{1}{\sqrt{10}}|0\rangle + \frac{3i}{\sqrt{10}}|1\rangle
+|\psi\rangle = \frac{\sqrt{3}}{2}|0\rangle - \frac{1}{2}|1\rangle
 \]
 
-This quantum state shows both:
-- **Amplitude imbalance** (higher chance of measuring ∣1⟩)
-- **Relative phase** (imaginary coefficient → tilt in Y–Z plane)
+### 🔍 Highlights:
+- Amplitude imbalance (75% |0⟩, 25% |1⟩)
+- **Negative relative phase** → Bloch vector tilts **left** (−X direction)
+- Same measurement probabilities as +phase, but **opposite interference behavior**
 
-##  Concepts:
-- Bloch Sphere
-- Quantum superposition
-- Complex amplitudes and phase effects
+### 💡 Concepts:
+- Bloch sphere and X-axis tilt
+- Phase in interference (not probability)
+- Qiskit statevector geometry
 
-## Requirements
-- Qiskit
-- NumPy
-- Matplotlib
+### 🛠 Requirements
+- qiskit
+- matplotlib
+- numpy
 
 Install with:
 ```bash
 pip install -r requirements.txt
 
-# How To Rum
-# bash
-python complex_superposition.py
 
+
+### RUN
+## bash
+python negative_phase.py
